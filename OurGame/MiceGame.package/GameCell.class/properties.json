@@ -1,0 +1,14 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "test 6/14/2023 16:03",
+	"instvars" : [
+		"mouseAction" ],
+	"name" : "GameCell",
+	"pools" : [
+		 ],
+	"super" : "SimpleSwitchMorph",
+	"type" : "normal" }
