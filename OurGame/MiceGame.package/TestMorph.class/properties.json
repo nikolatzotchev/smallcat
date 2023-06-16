@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"cells",
-		"catPosition" ],
-	"name" : "Game",
+		 ],
+	"name" : "TestMorph",
 	"pools" : [
 		 ],
-	"super" : "BorderedMorph",
+	"super" : "Morph",
 	"type" : "normal" }

@@ -5,6 +5,6 @@ newCellAt: i at: j
 	origin := self innerBounds origin.
 	self addMorph: cell.
 	cell
-		position: ((i - 1) * cell width) @ ((j - 1) * cell height ) + origin;
-		mouseAction: [self toggleNeighboursOfCellAt: i at: j]. 
+		position: ((i - 1) * cell width) @ ((j - 1) * cell height ) + origin.
 	^ cell
+	"mouseAction: [self toggleNeighboursOfCellAt: i at: j]." 
