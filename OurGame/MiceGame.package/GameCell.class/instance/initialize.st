@@ -2,10 +2,7 @@ initialization
 initialize
 	super initialize.
 	self
-		label:'';
-		borderWidth: 2;
+		borderWidth: 1;
 		bounds: (0 @ 0 corner: 16 @ 16);
-		offColor: Color cantaloupe;
-		onColor: Color aqua;
+		color: Color cantaloupe;
 		useSquareCorners.
-	self turnOff. 

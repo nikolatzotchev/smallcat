@@ -10,5 +10,5 @@
 	"name" : "GameCell",
 	"pools" : [
 		 ],
-	"super" : "SimpleSwitchMorph",
+	"super" : "RectangleMorph",
 	"type" : "normal" }

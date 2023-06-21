@@ -1,17 +1,26 @@
-as yet unclassified
+game logic
 handleKeystroke: anEvent
-	|keyValue catx caty|
-	catx := catPosition x.
-	caty := catPosition y.
+	|keyValue catPosition|
 	keyValue := anEvent keyValue.
-	"Transcript show: keyValue."
-	(keyValue = 30 and: caty > 1)
-		ifTrue: [self catPosition: catPosition - (0 @ 1).].
-	(keyValue = 31 and: caty < self cellsPerSide)
-		ifTrue: [self catPosition: catPosition + (0 @ 1)].
-	(keyValue = 29 and: catx < self cellsPerSide)
-		ifTrue: [self catPosition: catPosition +  (1 @ 0)].
-	(keyValue = 28 and: catx > 1)
-		ifTrue: [self catPosition: catPosition -  (1 @ 0)].
-	self toggleAt: catPosition.
-	self toggleAt: catx@caty.
+	catPosition := cat getPosition.
+	
+	(keyValue = 30 and: catPosition y > 1)
+		ifTrue: [
+			cat position: cat position - (0 @  cat height ).
+			cat setPosition: catPosition - (0@1).
+			].
+	(keyValue = 31 and: catPosition y < self cellsPerSide)
+		ifTrue: [
+			cat position: cat position + (0 @  cat height ).
+			cat setPosition: catPosition + (0@1).
+			].
+	(keyValue = 29 and: catPosition x < self cellsPerSide)
+		ifTrue: [
+			cat position: cat position + (cat width @ 0).
+			cat setPosition: catPosition + (1@0).
+			].
+	(keyValue = 28 and: catPosition x > 1)
+		ifTrue: [
+			cat position: cat position - (cat width @ 0).
+			cat setPosition: catPosition - (1@0).
+			].

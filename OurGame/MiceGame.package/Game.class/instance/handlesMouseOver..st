@@ -1,4 +1,4 @@
-as yet unclassified
+game logic
 handlesMouseOver: anEvent
 
 	^true

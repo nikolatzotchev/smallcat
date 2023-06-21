@@ -6,13 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"cells",
-		"cat",
-		"subways",
-		"mice",
-		"finalSubway" ],
-	"name" : "Game",
+		"mousePosition",
+		"inSubway" ],
+	"name" : "MouseCell",
 	"pools" : [
 		 ],
-	"super" : "BorderedMorph",
+	"super" : "GameCell",
 	"type" : "normal" }
