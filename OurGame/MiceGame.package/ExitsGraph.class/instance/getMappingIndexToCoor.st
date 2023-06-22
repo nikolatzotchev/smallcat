@@ -1,4 +1,4 @@
 as yet unclassified
-setPosition: pos
+getMappingIndexToCoor
 	"comment stating purpose of message"
-	catPosition := pos.
+	^mappingIndexToCoor

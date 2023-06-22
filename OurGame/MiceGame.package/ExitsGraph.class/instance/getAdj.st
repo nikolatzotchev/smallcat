@@ -1,4 +1,4 @@
 as yet unclassified
-getPosition
+getAdj
 	"comment stating purpose of message"
-	^catPosition
+	^adj

@@ -1,4 +1,4 @@
-initialization
-numberOfMice
+as yet unclassified
+getDist
 	"comment stating purpose of message"
-	^1
+	^dist

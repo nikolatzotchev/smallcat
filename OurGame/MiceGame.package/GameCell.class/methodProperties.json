@@ -2,4 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "test 6/21/2023 16:20" } }
+		"distanceTo:" : "test 6/22/2023 12:07",
+		"getPosition" : "test 6/22/2023 11:12",
+		"initialize" : "test 6/21/2023 16:20",
+		"setPosition:" : "test 6/22/2023 11:12" } }
