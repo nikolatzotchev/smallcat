@@ -1,4 +1,4 @@
 initialization
 numberOfMice
 	"comment stating purpose of message"
-	^1
+	^10

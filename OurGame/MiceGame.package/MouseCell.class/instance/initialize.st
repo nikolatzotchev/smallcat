@@ -4,5 +4,5 @@ initialize
 
 	super initialize.
 	self
-		color: Color blue.
+		color: Color cyan.
 	alive := true.

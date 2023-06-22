@@ -8,7 +8,8 @@
 	"instvars" : [
 		"adj",
 		"mappingCoorToIndex",
-		"mappingIndexToCoor" ],
+		"mappingIndexToCoor",
+		"mappingSubways" ],
 	"name" : "ExitsGraph",
 	"pools" : [
 		 ],
