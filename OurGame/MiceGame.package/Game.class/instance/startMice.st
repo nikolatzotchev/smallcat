@@ -49,28 +49,24 @@ startMice
 								ifTrue: [
 									xDest > xMouse
 									ifTrue: [
-										m setPosition: mousePos + (1@0).
-										m position: m position + (m width  @ 0).
+										m moveRight.
 										]
 									ifFalse:[
-										m setPosition: mousePos - (1@0).
-										m position: m position - (m width  @ 0).
+										m moveLeft.
 										].
 									]
 								ifFalse:[
 									yDest > yMouse
 									ifTrue: [
-										m setPosition: mousePos + (0@1).
-										m position: m position + (0 @ m height ).
+										m moveDown.
 										]
 									ifFalse:[
-										m setPosition: mousePos - (0@1).
-										m position: m position - (0 @ m height ).
+										m moveUp.
 										].  	
 									].
 								]
 							].
-					(1 + (randomR next) )second asDelay wait.
+					(0.5 + (randomR next) )second asDelay wait.
 				].
 			
 			] fork
