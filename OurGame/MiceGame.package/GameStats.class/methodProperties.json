@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addKill" : "Lorenz Kofler 6/26/2023 16:03",
+		"checkIfFinished" : "Lorenz Kofler 6/26/2023 16:10",
+		"getNumberOfExitedMice" : "Lorenz Kofler 6/26/2023 13:40",
+		"initialize" : "Lorenz Kofler 6/26/2023 15:53",
+		"mouseFinished" : "Lorenz Kofler 6/26/2023 16:10",
+		"setNumberOfMice:" : "Lorenz Kofler 6/26/2023 15:53" } }

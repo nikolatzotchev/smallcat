@@ -10,7 +10,7 @@ startMice
 			[ 	
 				|graph path loopVar|
 				loopVar := true.
-				[loopVar]
+				[loopVar and: m getAlive]
 				whileTrue: [
 					|step|
 					graph := ExitsGraph new.
@@ -41,6 +41,7 @@ startMice
 								m hide.
 								enterSubway = finalSubway 
 								ifTrue:[
+									stats mouseFinished.
 									loopVar := false.
 									]
 								]
