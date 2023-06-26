@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"distanceTo:" : "test 6/22/2023 12:07",
+		"getPosition" : "test 6/22/2023 11:12",
+		"initialize" : "test 6/21/2023 16:20",
+		"move" : "test 6/23/2023 12:46",
+		"moveDown" : "test 6/23/2023 12:47",
+		"moveLeft" : "test 6/23/2023 12:43",
+		"moveRight" : "test 6/23/2023 12:44",
+		"moveUp" : "test 6/23/2023 12:47",
+		"setPosition:" : "test 6/22/2023 11:12" } }

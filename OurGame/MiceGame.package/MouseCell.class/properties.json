@@ -1,0 +1,15 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"inSubway",
+		"alive" ],
+	"name" : "MouseCell",
+	"pools" : [
+		 ],
+	"super" : "GameCell",
+	"type" : "normal" }

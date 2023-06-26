@@ -1,0 +1,15 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "test 6/14/2023 16:03",
+	"instvars" : [
+		"mouseAction",
+		"positionInBoard" ],
+	"name" : "GameCell",
+	"pools" : [
+		 ],
+	"super" : "RectangleMorph",
+	"type" : "normal" }

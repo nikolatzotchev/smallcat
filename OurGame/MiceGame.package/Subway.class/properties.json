@@ -1,0 +1,14 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"exits" ],
+	"name" : "Subway",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

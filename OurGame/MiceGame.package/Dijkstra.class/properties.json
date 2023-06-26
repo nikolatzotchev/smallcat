@@ -1,0 +1,16 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"graph",
+		"dist",
+		"parent" ],
+	"name" : "Dijkstra",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

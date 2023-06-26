@@ -1,0 +1,1 @@
+Class representing the cell of our game board

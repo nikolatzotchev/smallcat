@@ -1,0 +1,4 @@
+initialization
+defaultCellColor
+
+	^(Color cantaloupe)

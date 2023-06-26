@@ -1,0 +1,14 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TestMorph",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

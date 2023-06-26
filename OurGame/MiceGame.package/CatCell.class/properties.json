@@ -1,0 +1,14 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CatCell",
+	"pools" : [
+		 ],
+	"super" : "GameCell",
+	"type" : "normal" }

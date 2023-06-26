@@ -1,0 +1,16 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"kills",
+		"miceFinished",
+		"numberOfMice" ],
+	"name" : "GameStats",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

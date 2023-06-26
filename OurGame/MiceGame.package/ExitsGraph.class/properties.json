@@ -1,0 +1,17 @@
+{
+	"category" : "MiceGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"adj",
+		"mappingCoorToIndex",
+		"mappingIndexToCoor",
+		"mappingSubways" ],
+	"name" : "ExitsGraph",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
