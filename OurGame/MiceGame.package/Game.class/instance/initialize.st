@@ -15,10 +15,10 @@ initialize
 	self generateSubways.
 	finalSubway :=  subways size atRandom.
 	self paintSubwaysExits.
-	self initCat.
 	self initMice.
+	self initCat.
 	self startMice.
-	
+
 	
 	ActiveHand newKeyboardFocus: self.
 	

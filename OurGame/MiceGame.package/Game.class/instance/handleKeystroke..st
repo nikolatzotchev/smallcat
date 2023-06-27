@@ -25,15 +25,15 @@ handleKeystroke: anEvent
 			cat position: cat position - (cat width @ 0).
 			cat setPosition: catPosition - (1@0).
 			].
-		
+
 	"Transcript show: 'Position Cat: ', catPosition x printString, ' ', catPosition y printString."
 	"Transcript cr."
 	mice do: [:m|
 		(m getAlive and: catPosition x = m getPosition x and: catPosition y = m getPosition y )
 		ifTrue:[
-			stats addKill.
-			m kill.
 			m hide.
+			m kill.
+			stats addKill.
 			].
 		].
 

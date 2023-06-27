@@ -12,5 +12,5 @@
 	"name" : "GameStats",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "Object",
 	"type" : "normal" }
