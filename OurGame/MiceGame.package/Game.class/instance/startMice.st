@@ -1,6 +1,6 @@
 initialization
 startMice
-	"comment stating purpose of message"
+	"Starts the mice movements in threads"
 	|dijkstra origin randomR|
 	
 	dijkstra := Dijkstra new.
@@ -21,6 +21,7 @@ startMice
 					step := path at: 1.
 					m getInSubway ~= -1
 						ifTrue: [
+							"mouse is in subway and gets out of the subway"
 							origin := self innerBounds origin.
 							m position: ((step x - 1) * m width) @ ((step y - 1) * m height ) + origin. 
 							m setPosition: step.
@@ -28,6 +29,7 @@ startMice
 							m show.
 							]
 						ifFalse: [
+							"mouse is not in subway"
 							|xDest xMouse yDest yMouse mousePos|
 							mousePos := m getPosition.
 							xDest := step x.
@@ -36,17 +38,20 @@ startMice
 							yMouse := m getPosition y.
 							step = mousePos
 							ifTrue:[
+								"mouse enters subway"
 								|enterSubway|
 								enterSubway := (dijkstra getGraph getMappingSubways at: step).
 								m setInSubway: enterSubway.
 								m hide.
 								enterSubway = finalSubway 
 								ifTrue:[
+									"mouse enters final subway"
 									stats mouseFinished.
 									loopVar := false.
 									]
 								]
 							ifFalse:[
+								"mouse moves on the ground (not subway)"
 								(xDest ~= xMouse and: yDest > yMouse)
 								ifTrue: [
 									|random|
@@ -75,7 +80,7 @@ startMice
 										].
 									]
 								ifFalse: [
-									"if  either x or y axis is already correct, then just move the other axis"
+									"if either x or y axis is already correct, then just move the other axis"
 									 xDest ~= xMouse
 									ifTrue: [
 										"Move x axis"
@@ -88,7 +93,7 @@ startMice
 											].
 										]
 									ifFalse:[
-										"Move y axis"
+										"move y axis"
 										yDest > yMouse
 										ifTrue: [
 											m moveDown.
@@ -100,8 +105,9 @@ startMice
 									]
 								].
 							].
+					
 					(0.5 + (2 * (randomR next) )) second asDelay wait.
-				].
-			
+					self checkAndKillMice.
+				].			
 			] fork
 		]

@@ -4,9 +4,10 @@
 	"instance" : {
 		"catPosition:" : "test 6/21/2023 16:40",
 		"cellsPerSide" : "test 6/23/2023 13:54",
+		"checkAndKillMice" : "Lorenz Kofler 6/27/2023 18:25",
 		"defaultCellColor" : "test 6/21/2023 16:28",
-		"generateSubways" : "test 6/27/2023 17:03",
-		"handleKeystroke:" : "Lorenz Kofler 6/27/2023 11:18",
+		"generateSubways" : "Lorenz Kofler 6/27/2023 18:17",
+		"handleKeystroke:" : "Lorenz Kofler 6/27/2023 18:20",
 		"handlesMouseOver:" : "test 6/16/2023 14:19",
 		"initCat" : "test 6/21/2023 19:54",
 		"initMice" : "test 6/22/2023 18:29",
@@ -21,5 +22,5 @@
 		"randomPos" : "test 6/21/2023 18:36",
 		"randomRowOrCol" : "test 6/21/2023 18:41",
 		"resetCell:" : "test 6/21/2023 16:30",
-		"startMice" : "Lorenz Kofler 6/27/2023 18:09",
+		"startMice" : "Lorenz Kofler 6/27/2023 18:23",
 		"toggleNeighboursOfCellAt:at:" : "test 6/14/2023 17:02" } }

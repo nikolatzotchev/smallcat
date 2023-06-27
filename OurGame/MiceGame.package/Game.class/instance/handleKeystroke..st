@@ -1,11 +1,12 @@
 game logic
 handleKeystroke: anEvent
+	"handles keystores i.e. controls the mouse with arrow keys"
+	
 	|keyValue catPosition|
 	keyValue := anEvent keyValue.
 	catPosition := cat getPosition.
-	
 
-	 "Nothing more expected ->"(keyValue = 30 and: catPosition y > 1)
+	(keyValue = 30 and: catPosition y > 1)
 		ifTrue: [
 			cat position: cat position - (0 @  cat height ).
 			cat setPosition: catPosition - (0@1).
@@ -26,15 +27,6 @@ handleKeystroke: anEvent
 			cat setPosition: catPosition - (1@0).
 			].
 
-	"Transcript show: 'Position Cat: ', catPosition x printString, ' ', catPosition y printString."
-	"Transcript cr."
-	mice do: [:m|
-		(m getAlive and: catPosition x = m getPosition x and: catPosition y = m getPosition y )
-		ifTrue:[
-			m hide.
-			m kill.
-			stats addKill.
-			].
-		].
+	self checkAndKillMice.
 
 	
