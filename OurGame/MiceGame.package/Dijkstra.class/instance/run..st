@@ -21,7 +21,6 @@ run: exitGraph
 					v = -1
 						ifTrue: [
 							v := j.
-							
 						]
 						ifFalse: [
 							distV := (dist at: v).

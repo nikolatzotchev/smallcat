@@ -2,7 +2,7 @@ initialization
 startMice
 	"comment stating purpose of message"
 	|dijkstra origin randomR|
-	origin := self innerBounds origin.
+	
 	dijkstra := Dijkstra new.
 	randomR := Random new.
 	mice do: [:m | 		
@@ -21,6 +21,7 @@ startMice
 					step := path at: 1.
 					m getInSubway ~= -1
 						ifTrue: [
+							origin := self innerBounds origin.
 							m position: ((step x - 1) * m width) @ ((step y - 1) * m height ) + origin. 
 							m setPosition: step.
 							m setInSubway: -1.
@@ -67,7 +68,7 @@ startMice
 									].
 								]
 							].
-					(0.5 + (randomR next) )second asDelay wait.
+					(0.5 + (2 * (randomR next) )) second asDelay wait.
 				].
 			
 			] fork

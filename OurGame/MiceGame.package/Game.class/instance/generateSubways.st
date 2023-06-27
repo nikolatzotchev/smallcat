@@ -4,7 +4,7 @@ generateSubways
 	subways := (1 to: self numberOfSubways) collect: [ :i |
 	    | exits subway |
 	    "exits := (1 to: (2 to: 5) atRandom) collect: [:j |"
-	    exits := (1 to: ( (2 to: 5) atRandom)) collect: [:j |
+	    exits := (1 to: ( (2 to: 3) atRandom)) collect: [:j |
 		|point|
 		point := self randomPos.
 		point 
