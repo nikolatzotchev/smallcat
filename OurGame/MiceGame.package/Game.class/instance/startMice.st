@@ -13,8 +13,8 @@ startMice
 				[loopVar and: m getAlive]
 				whileTrue: [
 					|step|
-					graph := ExitsGraph new.
-			      	graph createFromBoard: subways mouse: m.
+					graph := ExitsGraphAvoid new.
+			      	graph createFromBoard: subways mouse: m cat: cat.
 					dijkstra run: graph.
 					path := dijkstra getPath: (dijkstra getShortestDist: (subways at: finalSubway)).
 					"move one step on the path"
@@ -105,9 +105,8 @@ startMice
 									]
 								].
 							].
-					
+					"self checkAndKillMice."
 					(0.5 + (2 * (randomR next) )) second asDelay wait.
-					self checkAndKillMice.
 				].			
 			] fork
 		]

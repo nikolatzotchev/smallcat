@@ -1,4 +1,4 @@
-initialization
-numberOfMice
+as yet unclassified
+getAdj
 	"comment stating purpose of message"
-	^5
+	^adj

@@ -18,6 +18,7 @@ initialize
 	self initMice.
 	self initCat.
 	self startMice.
+	self checkAndKillMice.
 
 	
 	ActiveHand newKeyboardFocus: self.

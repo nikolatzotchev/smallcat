@@ -27,6 +27,4 @@ handleKeystroke: anEvent
 			cat setPosition: catPosition - (1@0).
 			].
 
-	self checkAndKillMice.
-
 	

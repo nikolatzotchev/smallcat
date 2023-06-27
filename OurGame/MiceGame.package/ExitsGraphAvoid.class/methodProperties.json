@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"createFromBoard:mouse:cat:" : "test 6/27/2023 21:14",
+		"distModifier:cat:" : "test 6/27/2023 22:09",
+		"getAdj" : "test 6/22/2023 13:12",
+		"getMappingCoorToIndex" : "test 6/22/2023 18:02",
+		"getMappingIndexToCoor" : "test 6/22/2023 18:03",
+		"getMappingSubways" : "test 6/22/2023 20:16" } }
