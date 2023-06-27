@@ -47,26 +47,58 @@ startMice
 									]
 								]
 							ifFalse:[
-								xDest ~= xMouse
+								(xDest ~= xMouse and: yDest > yMouse)
 								ifTrue: [
-									xDest > xMouse
+									|random|
+									"move randomly in x or y axis"
+									random := (0 to: 1) atRandom
+									random = 1
 									ifTrue: [
-										m moveRight.
+										"move x axis"
+										xDest > xMouse
+										ifTrue: [
+											m moveRight.
+											]
+										ifFalse:[
+											m moveLeft.
+											].
 										]
-									ifFalse:[
-										m moveLeft.
+									ifFalse: [
+										"move y axis"
+										yDest > yMouse
+										ifTrue: [
+											m moveDown.
+											]
+										ifFalse:[
+											m moveUp.
+											].  	
 										].
 									]
-								ifFalse:[
-									yDest > yMouse
+								ifFalse: [
+									"if  either x or y axis is already correct, then just move the other axis"
+									 xDest ~= xMouse
 									ifTrue: [
-										m moveDown.
+										"Move x axis"
+										xDest > xMouse
+										ifTrue: [
+											m moveRight.
+											]
+										ifFalse:[
+											m moveLeft.
+											].
 										]
 									ifFalse:[
-										m moveUp.
-										].  	
-									].
-								]
+										"Move y axis"
+										yDest > yMouse
+										ifTrue: [
+											m moveDown.
+											]
+										ifFalse:[
+											m moveUp.
+											].  	
+										].
+									]
+								].
 							].
 					(0.5 + (2 * (randomR next) )) second asDelay wait.
 				].
